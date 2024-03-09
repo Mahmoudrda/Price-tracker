@@ -40,7 +40,7 @@ def check_price():
     price = price[4:9]
     date_and_time = datetime.now()
     date_and_time = date_and_time.strftime("%d/%m/%y %H:%M:%S")
-    hearders = ['name', 'price', 'date and time']
+    headers = ['name', 'price', 'date and time']
     data = [name, price, date_and_time]
     with open('airpods price.csv', 'a+', newline='', encoding='UTF8') as file:
         writer = csv.writer(file)
@@ -48,7 +48,7 @@ def check_price():
 def send_mail():
     ##defining the variables
     sender = 'mahmoud.reda.acc@gmail.com'
-    password = 'ejdc yqbo tyel gmit'
+    password = '****************'
     receiver = 'mahmoud.reda1277.hr@gmail.com'
     subject = 'IT IS A GOOD TIME TO GET AN AIRPODS'
     body = """ Go and check your apple airpods 3 on noon"""
